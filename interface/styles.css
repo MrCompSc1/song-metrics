@@ -1,6 +1,17 @@
+#player-temp-placeholder {
+    border: 1px;
+    color: #ffffff;
+    border-color: inherit;
+    border-style: solid;
+    margin: auto;
+    width: 80%;
+    height: 50vh;
+    margin-bottom: 3vh;
+}
+
 body {
-    background: #3553ab;
-    color: #FCF3CF;
+    background: #212121;
+    color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
@@ -9,13 +20,13 @@ h1 {
     color: #ffffff;
     font-size: min(6vw, 48px);
     margin: auto;
-    padding-top: 1rem;
+    padding-top: 1.2rem;
     padding-bottom: 10px;
 }
 
 header {
     width: 100%;
-    background-color: #1b1b32;
+    background-color: #1db954;
     display: flex;
     align-items: center;
 }
@@ -24,36 +35,47 @@ main {
     padding-top: 10px;
 }
 
-.metric {
-    border: 1px;
-    border-radius: 5px;
-    color: #ffffff;
-    border-color: inherit;
-    border-style: solid;
-    width: min(28vw, 10em); 
-
-    
-    font-size: min(5vw, 25px);
-    text-align: center;
-    padding-top: 0.5em;
-
-}
-
-.metric-row {
+.row-of-details {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: min(1.5vw, 10px);
 }
 
+.metric {
+    border: 1px;
+    border-radius: 5px;
+    color: #ffffff;
+    border-color: inherit;
+    border-style: solid;
+    width: min(28vw, 10em);   
+    font-size: min(6vw, 30px);
+    text-align: center;
+}
+
+.metric-title {
+    padding: 0.1em;
+    font-size: 0.9em;
+}
+
+.metric-data {
+    font-weight: bold;
+    padding: 0.4rem;
+
+}
+
+#bpm {
+    font-size: 0.6rem;
+}
+
 @media screen and (max-width: 600px) {
 
-    .metric-row {
+    .row-of-details {
         flex-direction: column;
         align-items: center;
     }
 
     .metric {
-        width:65%;
+        width:75%;
     }
  }
